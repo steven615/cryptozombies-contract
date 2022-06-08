@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\work\\blockchain\\cryptozombies\\contracts\\ZombieFactory.sol": {
-      "lastModificationDate": 1654628799065,
-      "contentHash": "3ce8ab27178b64934ce03fdaa319094b",
+      "lastModificationDate": 1654669630163,
+      "contentHash": "efb6a0421a279c02da3b6ceb2e1b8fbc",
       "sourceName": "contracts/ZombieFactory.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -29,7 +29,8 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/access/Ownable.sol"
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol"
       ],
       "versionPragmas": [
         ">=0.7.3"
@@ -39,8 +40,8 @@
       ]
     },
     "D:\\work\\blockchain\\cryptozombies\\contracts\\ZombieFeeding.sol": {
-      "lastModificationDate": 1654628303581,
-      "contentHash": "8aface66de7f4e3ffa08d6ba5f659404",
+      "lastModificationDate": 1654666099775,
+      "contentHash": "a59eb3845a8426ed47e3a2e898470114",
       "sourceName": "contracts/ZombieFeeding.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -149,8 +150,8 @@
       ]
     },
     "D:\\work\\blockchain\\cryptozombies\\contracts\\ZombieHelper.sol": {
-      "lastModificationDate": 1654628370791,
-      "contentHash": "9f41503627a2dc8d12f03730c6e230a4",
+      "lastModificationDate": 1654666124523,
+      "contentHash": "a70d87d711cb20f2618d9a85b471b606",
       "sourceName": "contracts/ZombieHelper.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -186,8 +187,8 @@
       ]
     },
     "D:\\work\\blockchain\\cryptozombies\\contracts\\ZombieAttack.sol": {
-      "lastModificationDate": 1654628992833,
-      "contentHash": "be04191c86ae7e885151d93c322612b7",
+      "lastModificationDate": 1654666137213,
+      "contentHash": "fb7dd31fcc5611b5e33e3b71dc37a5ba",
       "sourceName": "contracts/ZombieAttack.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -220,6 +221,484 @@
       ],
       "artifacts": [
         "ZombieAttack"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\contracts\\ZombieOwnership.sol": {
+      "lastModificationDate": 1654668824596,
+      "contentHash": "00080228d3320102843e0fc4d7ab5552",
+      "sourceName": "contracts/ZombieOwnership.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "./ZombieAttack.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.3"
+      ],
+      "artifacts": [
+        "ZombieOwnership"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol": {
+      "lastModificationDate": 1653975688450,
+      "contentHash": "3fa5b045af1067a925e02da647523224",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "../../introspection/ERC165.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../utils/EnumerableSet.sol",
+        "../../utils/EnumerableMap.sol",
+        "../../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol": {
+      "lastModificationDate": 1653975688610,
+      "contentHash": "1607fe9cc333c6de30f5098d45061a0b",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Metadata.sol": {
+      "lastModificationDate": 1653975688646,
+      "contentHash": "7fe751b35ebe8466b56415cce55a7074",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Enumerable.sol": {
+      "lastModificationDate": 1653975688611,
+      "contentHash": "889ec04fca4214581eef408fff230efa",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
+      "lastModificationDate": 1653975688648,
+      "contentHash": "b00bb215c82f73f87e6fed90b74f67d6",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\introspection\\ERC165.sol": {
+      "lastModificationDate": 1653975688372,
+      "contentHash": "674a2137d8125c497b9dc83b82235171",
+      "sourceName": "@openzeppelin/contracts/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\math\\SafeMath.sol": {
+      "lastModificationDate": 1653975688745,
+      "contentHash": "871a094d6b6b4c3714946e86329f2fa2",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1653975688284,
+      "contentHash": "fc7c67d7b17cde979a685143a26b2bc8",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\utils\\EnumerableSet.sol": {
+      "lastModificationDate": 1653975688346,
+      "contentHash": "67da1a55369b7665b43457144add6761",
+      "sourceName": "@openzeppelin/contracts/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\utils\\EnumerableMap.sol": {
+      "lastModificationDate": 1653975688344,
+      "contentHash": "d35f59d1f5a637f1c9d80319c401c779",
+      "sourceName": "@openzeppelin/contracts/utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
+      "lastModificationDate": 1653975688758,
+      "contentHash": "0a0b5402f31b9b60fdb741918c57247f",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\node_modules\\@openzeppelin\\contracts\\introspection\\IERC165.sol": {
+      "lastModificationDate": 1653975688592,
+      "contentHash": "253edeb099cfd6a3b0501d2620312e3e",
+      "sourceName": "@openzeppelin/contracts/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC165"
       ]
     }
   }
