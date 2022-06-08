@@ -9,6 +9,10 @@ import "./ZombieAttack.sol";
 /// @notice Explain to an end user what this does
 /// @dev Explain to a developer any extra details
 abstract contract ZombieOwnership is ZombieAttack, ERC721 {
+    using SafeMath for uint256;
+    using SafeMath32 for uint32;
+    using SafeMath16 for uint16;
+
     mapping(uint256 => address) zombieApprovals;
 
     function balanceOf(address _owner)

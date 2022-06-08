@@ -4,6 +4,10 @@ pragma solidity >=0.7.3;
 import "./ZombieHelper.sol";
 
 contract ZombieAttack is ZombieHelper {
+    using SafeMath for uint;
+    using SafeMath32 for uint32;
+    using SafeMath16 for uint16;
+
     uint randNonce = 0;
     uint attackVictoryProbablity = 70;
 

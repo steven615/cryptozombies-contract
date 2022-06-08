@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\work\\blockchain\\cryptozombies\\contracts\\ZombieFactory.sol": {
-      "lastModificationDate": 1654669630163,
-      "contentHash": "efb6a0421a279c02da3b6ceb2e1b8fbc",
+      "lastModificationDate": 1654696311831,
+      "contentHash": "fcff29894ac8f6c3ebe58a516e3dadd8",
       "sourceName": "contracts/ZombieFactory.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -30,7 +30,8 @@
       },
       "imports": [
         "@openzeppelin/contracts/access/Ownable.sol",
-        "@openzeppelin/contracts/math/SafeMath.sol"
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "./SafeMath.sol"
       ],
       "versionPragmas": [
         ">=0.7.3"
@@ -187,8 +188,8 @@
       ]
     },
     "D:\\work\\blockchain\\cryptozombies\\contracts\\ZombieAttack.sol": {
-      "lastModificationDate": 1654666137213,
-      "contentHash": "fb7dd31fcc5611b5e33e3b71dc37a5ba",
+      "lastModificationDate": 1654696502656,
+      "contentHash": "c99a2905539ad5a582a59a42b89a6bc6",
       "sourceName": "contracts/ZombieAttack.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -224,8 +225,8 @@
       ]
     },
     "D:\\work\\blockchain\\cryptozombies\\contracts\\ZombieOwnership.sol": {
-      "lastModificationDate": 1654668824596,
-      "contentHash": "00080228d3320102843e0fc4d7ab5552",
+      "lastModificationDate": 1654696547057,
+      "contentHash": "fbecda057c885e5edb60cac395f069ca",
       "sourceName": "contracts/ZombieOwnership.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -699,6 +700,42 @@
       ],
       "artifacts": [
         "IERC165"
+      ]
+    },
+    "D:\\work\\blockchain\\cryptozombies\\contracts\\SafeMath.sol": {
+      "lastModificationDate": 1654696308251,
+      "contentHash": "051fd8445b10a232f2a7c1da942df077",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.3"
+      ],
+      "artifacts": [
+        "SafeMath16",
+        "SafeMath32"
       ]
     }
   }
